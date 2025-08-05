@@ -303,6 +303,69 @@ footer {
     border: 1px solid #e5e5e5;
     border-radius: 8px;
     background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.experience-item.clickable {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.experience-item.clickable:hover,
+.leadership-item.clickable:hover,
+.project-item.clickable:hover,
+.organization-item.clickable:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-color: #2196F3;
+}
+
+.hover-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(33, 150, 243, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 8px;
+}
+
+.experience-item.clickable:hover .hover-indicator {
+    opacity: 1;
+}
+
+.hover-indicator span {
+    color: #2196F3;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Compact experience items */
+.experience-item.compact {
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.experience-item.compact .experience-header h3 {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.experience-item.compact .position,
+.experience-item.compact .location,
+.experience-item.compact .duration {
+    font-size: 0.8rem;
+    margin-bottom: 0.15rem;
+}
+
+.experience-item.compact .hover-indicator span {
+    font-size: 0.8rem;
 }
 
 .experience-header, .leadership-header {

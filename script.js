@@ -31,6 +31,42 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Add click functionality to experience items
+    const clickableExperienceItems = document.querySelectorAll('.experience-item.clickable');
+    
+    clickableExperienceItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
+
+    // Add click functionality to leadership and project items
+    const clickableLeadershipItems = document.querySelectorAll('.leadership-item.clickable, .project-item.clickable');
+    
+    clickableLeadershipItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url && url !== '#') {
+                window.open(url, '_blank');
+            }
+        });
+    });
+
+    // Add click functionality to organization items
+    const clickableOrganizationItems = document.querySelectorAll('.organization-item.clickable');
+    
+    clickableOrganizationItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.open(url, '_blank');
+            }
+        });
+    });
+
     // Add scroll effect to navigation
     window.addEventListener('scroll', function() {
         const header = document.querySelector('header');
