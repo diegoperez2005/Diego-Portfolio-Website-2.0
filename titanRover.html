@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titan VEX Robot - Diego Perez</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <div class="nav-left">
+                    <a href="index.html">Projects</a>
+                    <a href="about.html">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="project-content">
+                <h1>Titan Vex Robot</h1>
+                <div class="project-meta">
+                    <div class="meta-item">
+                        <h3>Role</h3>
+                        <p>Lead MechE</p>
+                    </div>
+                    <div class="meta-item">
+                        <h3>Year</h3>
+                        <p>2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-details">
+            <div class="section-container">
+                <!-- Project Overview -->
+                <div class="project-section">
+                    <h2>Titan VEX Robot Overview</h2>
+                    <p>
+                        The goal of my Robotic Systems Design Class was to develop an autonomous robotic system to find a light pole, take a photo from the top, and make it back to the ground safely. My group created a robotic car that carries a drone we built to the light pole. After carrying the drone to the light pole, the drone then attaches to the light pole, flies up the pole, takes a photo at the top, and flies down. For this project, I created 3D models and drawings using SolidWorks that allowed my group and me to select the appropriate motors, sensors, and materials. In addition to the design side, I also got to build prototypes using the WashU Makerspace 3D printers, laser cutters, band saw, and other Makerspace machinery.
+                    </p>
+                </div>
+
+                <!-- Light pole and Drone -->
+                <div class="project-section">
+                    <h2>Competition Field and Layout</h2>
+                    <p>Below is the layout of the competition field that we would be competing in. Along with the number of green acorns that needed to be scored along with the size of the goals.</p>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x400/2a2a2a/ffffff?text=Light+Pole+and+Drone" alt="Light pole and drone">
+                    </div>
+                </div>
+
+                <!-- CAD Drawings -->
+                <div class="project-section">
+                    <h2>CAD Drawings of the Drone + Car</h2>
+                    <p>
+                        There is an open cavity at the front of the car so that the car can fit around the pole. Each wall of the drone frame is 30 mm wide. The car holds the sides of the drone frame using 30 mm supports to match the drone frame's width. In the first photo, the linear actuator is shown in its extended position and the drone's latch is open so that it can be pushed around the light pole. In the second photo, the drone is shown with its pivot latch closed and the linear actuator is retracted.
+                    </p>
+                    <div class="project-images-grid">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=CAD+Drawing+1" alt="CAD Drawing 1">
+                        </div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=CAD+Drawing+2" alt="CAD Drawing 2">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone CAD -->
+                <div class="project-section">
+                    <h2>Drone CAD</h2>
+                    <p>
+                        Below is an exploded view of the drone with a BOM, as well as two isometric views showing the drone's pivoting latch open and closed to simulate attaching to the light pole. The drone has four Readytosky motors and uses a Raspberry Pi camera to take photos.
+                    </p>
+                    <div class="project-images-grid">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=Drone+CAD+Exploded" alt="Drone CAD Exploded View">
+                        </div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=Drone+CAD+Isometric" alt="Drone CAD Isometric">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Car CAD -->
+                <div class="project-section">
+                    <h2>Car CAD</h2>
+                    <p>
+                        Below is an exploded view of the car with a BOM, and an isometric view. A 9V battery is hooked up to a battery adapter that connects to an L298N H-bridge which connects to an Arduino. This Arduino to H-bridge to battery configuration allows us to control the linear actuator and have it switch between extending and retracting when needed.
+                    </p>
+                    <div class="project-images-grid">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=Car+CAD+Exploded" alt="Car CAD Exploded View">
+                        </div>
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/600x400/2a2a2a/ffffff?text=Car+CAD+Isometric" alt="Car CAD Isometric">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drone Stabilization Test -->
+                <div class="project-section">
+                    <h2>Drone Stabilization Test</h2>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x400/2a2a2a/ffffff?text=Drone+Stabilization+Test" alt="Drone Stabilization Test">
+                    </div>
+                </div>
+
+                <!-- Group Photo -->
+                <div class="project-section">
+                    <h2>Group Photo</h2>
+                    <div class="project-image">
+                        <img src="https://via.placeholder.com/800x400/2a2a2a/ffffff?text=Group+Photo" alt="Group Photo">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; Diego Perez - 2025</p>
+            <div class="footer-nav">
+                <a href="../index.html">Projects</a>
+                <a href="../about.html">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html> 

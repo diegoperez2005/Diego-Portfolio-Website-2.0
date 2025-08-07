@@ -31,6 +31,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Add click functionality to clickable project cards
+    const clickableProjectCards = document.querySelectorAll('.project-card.clickable');
+    
+    clickableProjectCards.forEach(card => {
+        card.addEventListener('click', function() {
+            const url = this.getAttribute('data-url');
+            if (url) {
+                window.location.href = url;
+            }
+        });
+    });
+
     // Add click functionality to experience items
     const clickableExperienceItems = document.querySelectorAll('.experience-item.clickable');
     
